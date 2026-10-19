@@ -1,0 +1,32 @@
+{
+  "name": "@local/dsh-repo-scout",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Searches GitHub for a project matching a described need, ranks the candidates, and clones the best match with git.",
+  "meta": {
+    "title": "Repo Scout",
+    "description": "Turns a described need into GitHub search, ranks the results, and clones the chosen repository, recovering by itself from a broken git proxy configuration."
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "locale",
+    "icon.svg",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.2 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

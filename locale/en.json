@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Repo Scout",
+    "description": "Searches GitHub for a project matching a described need, ranks the results, and clones the chosen repository."
+  }
+}

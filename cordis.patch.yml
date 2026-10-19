@@ -1,0 +1,3 @@
+- insert:
+    - id: repo-scout
+      name: '@local/dsh-repo-scout'
